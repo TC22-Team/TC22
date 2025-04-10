@@ -17,7 +17,7 @@ h1 {\
         <div class="row">\
         <div class="col-md-3 col-sm-3 " > \
        <img class=" d-none d-sm-none d-md-block" width="200" src="Logos/logoTC22.png" style="margin: 10px;"> \
-       <img class=" d-none d-sm-block d-md-none" width="160" src="Logos/logoTC22small.png" style="margin: 10px;"> </div>\
+       <img class=" d-none d-sm-block d-md-none" width="140" src="Logos/logoTC22small.png" style="margin: 30px;"> </div>\
         <div class="col-md-8 col-sm-8 col-xs-12 " > \
         <h1 class="col-ms-8 "> IAPR TC22 -  Reproducible Research in Pattern Recognition   </h1> \
      <h2 class=" d-none d-sm-none d-md-block "><img  width="85" src="Logos/IAPRLogoSmall.png"> Technical Committee         \ </h4> \
