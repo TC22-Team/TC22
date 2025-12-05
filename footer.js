@@ -7,8 +7,8 @@ var pagename = path.split("/").pop();
 document.getElementById("footerSite").innerHTML = '  \
 <hr /> \
 <div class="footer"> \
-<p><a href="index.html">IAPR TC22 webpage</a> \
-You can contribute to the edition through the <a href="https://github.com/TC22-Team/TC22">Github source page</a> and directly edit this page <a href="https://github.com/TC22-Team/TC22/blob/main/'+pagename+'">here</a>. </p>\
+<p><a href="index.html">IAPR TC22 website</a>. \
+You can contribute to the contents via a pull request to the <a href="https://github.com/TC22-Team/TC22">repository on Github</a>. </p>\
 </div> \
 ';
 
