@@ -15,7 +15,23 @@
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="dist/css/custom.css">
 
-
+  <style>
+    .rrpr h2, .rrpr h4, .rrpr h5 { padding-left: 0; }
+    .rrpr h4 { padding-top: 0; }
+    .rrpr { font-size: 1.05rem; }
+    .rrpr-step { border-top: 3px solid #2B6D94; height: 100%; }
+    .rrpr-step .step-num {
+      display: inline-block; width: 1.8em; height: 1.8em; line-height: 1.8em; border-radius: 50%;
+      background: #2B6D94; color: #fff; text-align: center; font-weight: bold; margin-right: .4em;
+    }
+    .rrpr-step .card-title { font-size: 1.05rem; margin-bottom: .75rem; }
+    .rrpr-step ul { padding-left: 1.1em; margin-bottom: 0; }
+    .rrpr-step li { margin-bottom: .35em; }
+    .rrpr-facts dt { font-weight: normal; color: #777; }
+    .rrpr-facts dd { margin-bottom: .6em; padding-left: 0; }
+    .rrpr-dates td { padding: .4rem .75rem; }
+    .rrpr-dates td:first-child { white-space: nowrap; font-weight: bold; }
+  </style>
 </head>
 
 <body>
@@ -28,78 +44,134 @@
   <!--/.nav-collapse -->
 
   <div id="site_content" class=" ml-0  mr-0">
+    <div class="row ml-3 mr-3">
+      <div class="col-12 col-xl-10 rrpr">
 
-    <div class="row ml-3 mr-1">
-      <div class="col-12 col-lg-10 text-justify  ">
-        <h2>RRPR Badge at ICIAP 2027</h2>
-
-        <div class="text-center my-4">
-          <a href="https://iciap2027.unimore.it/"><img src="Logos/logoICIAP2027.png" alt="ICIAP 2027" class="img-fluid" style="max-height: 70px;"></a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="index.html"><img src="Logos/logoTC22.png" alt="IAPR TC22" class="img-fluid" style="max-height: 90px;"></a>
+        <!------ Title and summary ----->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-8">
+            <h2>RRPR Badge at ICIAP 2027</h2>
+            <p class="lead mb-2">
+              The <strong>Reproducible Research in Pattern Recognition (RRPR) Badge</strong>, promoted by IAPR TC22,
+              is awarded to accepted ICIAP 2027 papers whose code allows their results to be reproduced.
+            </p>
+            <p class="mb-0">
+              It follows the process introduced at <a href="https://iapr-tc22-rrl.github.io/icpr2026/">ICPR 2026</a>.
+              Applying is optional and has no effect on the scientific review of the paper.
+            </p>
+          </div>
+          <div class="col-md-4 text-center mt-3 mt-md-0">
+            <a href="https://iciap2027.unimore.it/"><img src="Logos/logoICIAP2027.png" alt="ICIAP 2027" class="img-fluid mb-2" style="max-height: 60px;"></a>
+          </div>
         </div>
 
-        <p>
-          After its first edition at <a href="https://iapr-tc22-rrl.github.io/icpr2026/">ICPR 2026</a>, the
-          <strong>Reproducible Research in Pattern Recognition (RRPR) Badge</strong> promoted by IAPR TC22 comes to the
-          <a href="https://iciap2027.unimore.it/">24th International Conference on Image Analysis and Processing
-          (ICIAP 2027)</a>, Modena, Italy, 13&ndash;17 September 2027.
-        </p>
-        <p>
-          The badge is awarded to papers accepted to the main conference whose code, after a specific review, is
-          considered <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current"><em>reproducible</em></a>.
-          Applying is optional and has no effect on the scientific review of the paper.
-        </p>
+        <!------ Key facts ----->
+        <div class="card border-info mb-4">
+          <div class="card-body">
+            <dl class="row rrpr-facts mb-0">
+              <div class="col-sm-6 col-lg-3">
+                <dt>Conference</dt>
+                <dd><a href="https://iciap2027.unimore.it/">ICIAP 2027</a>, 24th International Conference on Image Analysis and Processing</dd>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <dt>Where and when</dt>
+                <dd>Modena, Italy<br>13&ndash;17 September 2027</dd>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <dt>Reproducible Research Chairs</dt>
+                <dd>Federico Bolelli<br>Miguel Colom</dd>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <dt>Contact</dt>
+                <dd><a href="mailto:iciap2027-rrpr@unimore.it">iciap2027-rrpr@unimore.it</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
 
-        <h4 class="mt-4">Submission and review process</h4>
-        <ol>
-          <li>When submitting the paper on <a href="https://openreview.net/">OpenReview</a>, authors tick the
-            <em>Apply for the RRPR Badge</em> option and provide the code in the submission form, either as a link to an
-            anonymised repository on <a href="https://anonymous.4open.science/">anonymous.4open.science</a> (preferred)
-            or as an anonymised zip file. <strong>Applications without code at submission time are not considered.</strong></li>
-          <li>The paper goes through the regular review process. <strong>Only accepted papers are evaluated</strong> for
-            reproducibility.</li>
-          <li>Immediately after acceptance, and in any case <strong>before the camera-ready deadline</strong>, authors make
-            the code publicly available (e.g., on GitHub). The anonymous repository can simply be made public.</li>
-          <li>The ICIAP Reproducible Research Chairs assign reviewers to each eligible paper.</li>
-          <li>Each reviewer checks the code and writes a short report with a recommendation, following the
-            <a href="https://iapr-tc22-rrl.github.io/icpr2026/reviewers/">reviewer's guide</a>.</li>
-          <li>The Reproducible Research Chairs act as meta-reviewers and decide on the badge attribution.</li>
-        </ol>
-        <p>The list of badged papers will appear on the websites of ICIAP 2027 and of IAPR TC22.</p>
+        <!------ How it works ----->
+        <h4 class="mb-3">How it works</h4>
+        <div class="row mb-2">
+          <div class="col-lg-4 mb-3">
+            <div class="card rrpr-step">
+              <div class="card-body">
+                <h5 class="card-title"><span class="step-num">1</span>At submission</h5>
+                <ul>
+                  <li>Tick <em>Apply for the RRPR Badge</em> in the OpenReview submission form.</li>
+                  <li>Provide the code in the form: an anonymised repository on
+                    <a href="https://anonymous.4open.science/">anonymous.4open.science</a> (preferred) or an anonymised zip file.</li>
+                  <li>No code at submission, no badge: the request is not considered.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card rrpr-step">
+              <div class="card-body">
+                <h5 class="card-title"><span class="step-num">2</span>After acceptance</h5>
+                <ul>
+                  <li>Only papers accepted through the regular review are evaluated.</li>
+                  <li>Make the code public right away, and in any case before the camera-ready deadline.
+                    The anonymous repository can simply be made public.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card rrpr-step">
+              <div class="card-body">
+                <h5 class="card-title"><span class="step-num">3</span>Badge review</h5>
+                <ul>
+                  <li>Reviewers check the released code, following the
+                    <a href="https://iapr-tc22-rrl.github.io/icpr2026/reviewers/">reviewer's guide</a>.</li>
+                  <li>The Reproducible Research Chairs decide on the badge.</li>
+                  <li>Badged papers are listed on the ICIAP 2027 and TC22 websites.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h4 class="mt-4">Code requirements</h4>
-        <p>The code is eligible for the RRPR Badge if:</p>
-        <ul>
-          <li>it is associated with a <strong>paper accepted at the main ICIAP 2027 conference</strong>;</li>
-          <li>the authors ticked the option to <strong>apply for the RRPR Badge</strong> and <strong>provided the code at
-            submission time</strong>;</li>
-          <li>the source code is <strong>public</strong> before the camera-ready deadline;</li>
-          <li>it has a <strong>README or INSTALL file</strong> explaining in detail how to install the dependencies and
-            the commands to compile and run the code;</li>
-          <li>the required <strong>data</strong> is <strong>publicly available</strong> (for neural networks, this
-            includes the trained weights).</li>
-        </ul>
-        <p>
-          During the review of the paper, the code must be anonymous, and the paper itself must not contain links to it.
-          See the <a href="https://iciap2027.unimore.it/call-for-papers.html#rrpr-badge">ICIAP 2027 Call for Papers</a>
-          for the submission rules.
-        </p>
+        <!------ Requirements and dates ----->
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <h4 class="mb-3">What the code needs</h4>
+            <ul>
+              <li>Public source code, ideally under an open-source licence.</li>
+              <li>A <strong>README</strong> or <strong>INSTALL</strong> file explaining how to install the dependencies
+                and how to run the code.</li>
+              <li>Publicly available <strong>data</strong>, including trained weights for neural networks.</li>
+              <li>Everything needed to obtain the results reported in the paper.</li>
+            </ul>
+            <p class="text-muted mb-0">
+              During the paper review the code must stay anonymous, and the paper must not link to it.
+            </p>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <h4 class="mb-3">Key dates</h4>
+            <table class="table table-sm rrpr-dates mb-1">
+              <tbody>
+                <tr><td>11 Feb 2027</td><td>Paper and code submission, first round</td></tr>
+                <tr><td>31 Mar 2027</td><td>Paper notification, first round</td></tr>
+                <tr><td>15 Apr 2027</td><td>Paper and code submission, second round</td></tr>
+                <tr><td>2 Jun 2027</td><td>Paper notification, second round</td></tr>
+                <tr><td>30 Jun 2027</td><td>Camera-ready: code must be public</td></tr>
+                <tr><td>TBA</td><td>Badge reviews and notification</td></tr>
+              </tbody>
+            </table>
+            <p class="text-muted small mb-0">Deadlines at 23:59 AoE (Anywhere on Earth).</p>
+          </div>
+        </div>
 
-        <h4 class="mt-4">Deadlines</h4>
-        <p>All deadlines are at 23:59 AoE (Anywhere on Earth).</p>
-        <ul>
-          <li>Paper submission (with code): 11 February 2027 (first round), 15 April 2027 (second round)</li>
-          <li>Paper notification: 31 March 2027 (first round), 2 June 2027 (second round)</li>
-          <li>Code publicly available: before the camera-ready deadline, 30 June 2027</li>
-          <li>RRPR Badge reviews and notification: to be announced</li>
-        </ul>
-
-        <h4 class="mt-4">Contact</h4>
-        <p>
-          <strong>ICIAP 2027 Reproducible Research Chairs</strong>: Federico Bolelli and Miguel Colom<br>
-          E-mail: <a href="mailto:iciap2027-info@unimore.it">iciap2027-info@unimore.it</a>
-        </p>
+        <!------ Links ----->
+        <div class="card mb-4">
+          <div class="card-body">
+            The submission rules are in the
+            <a href="https://iciap2027.unimore.it/call-for-papers.html#rrpr-badge">ICIAP 2027 Call for Papers</a>.
+            For questions about the badge, write to
+            <a href="mailto:iciap2027-rrpr@unimore.it">iciap2027-rrpr@unimore.it</a>.
+          </div>
+        </div>
 
         <div id="footerSite">
 
